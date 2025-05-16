@@ -89,10 +89,31 @@
             const diff = targetDate - currentTime;
 
             if (diff <= 0) {
-                document.getElementById('countdown').innerHTML = "💖 ¡Ya llegó el momento! 💖";
-                clearInterval(interval);
-                return;
-            }
+    const countdown = document.getElementById('countdown');
+    countdown.innerHTML = "";  // Limpiar texto
+
+    // Crear el botón
+    const btn = document.createElement('button');
+    btn.textContent = "Ir a la sorpresa";
+    btn.style.padding = "10px 20px";
+    btn.style.fontSize = "1.5rem";
+    btn.style.borderRadius = "10px";
+    btn.style.border = "none";
+    btn.style.backgroundColor = "#ff3366";
+    btn.style.color = "white";
+    btn.style.cursor = "pointer";
+    btn.style.boxShadow = "0 0 10px rgba(255, 51, 102, 0.7)";
+    
+    // Evento para redirigir al hacer clic
+    btn.onclick = () => {
+        window.location.href = "sorpresa.html"; // Cambia "sorpresa.html" por el archivo que quieras abrir
+    };
+
+    countdown.appendChild(btn);
+
+    clearInterval(interval);
+    return;
+}
 
             const days = Math.floor(diff / (1000 * 60 * 60 * 24));
             const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
