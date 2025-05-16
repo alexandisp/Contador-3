@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Razones por las que te amo</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #4b2e2e;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #fffafa;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      text-align: center;
+      color: #d6336c;
+      font-family: 'Brush Script MT', cursive;
+      font-size: 3em;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #ff6b81;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff4d6d;
+    }
+
+    ul {
+      padding-left: 20px;
+      list-style-type: none;
+    }
+
+    li {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+      padding-left: 10px;
+      position: relative;
+    }
+
+    li::before {
+      content: "❤";
+      position: absolute;
+      left: -20px;
+      color: #ff6b81;
+    }
+
+    .numerado li::before {
+      content: counter(item) ".";
+      color: #d6336c;
+      font-weight: bold;
+    }
+
+    .numerado {
+      counter-reset: item;
+    }
+
+    .numerado li {
+      counter-increment: item;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>1000 razones por las que te amo</h1>
+    <button onclick="cambiarIconos()">Mostrar con números</button>
+    <ul id="lista-razones">
+      <li>Amo cuando sonríes sin darte cuenta.</li>
+      <li>Me encanta cómo me miras en silencio.</li>
+      <li>Adoro tus abrazos inesperados.</li>
+      <li>Me enamora cómo dices mi nombre.</li>
+      <li>Me inspira tu forma de ver el mundo.</li>
+      <li>Amo cómo te ríes por tonterías.</li>
+      <li>Me llena la forma en que me haces sentir.</li>
+      <li>Adoro cuando tomas mi mano con suavidad.</li>
+      <li>Me encanta cómo te emocionas por cosas pequeñas.</li>
+      <li>Amo cómo tu voz me da calma.</li>
+      <li>Me fascina cómo me haces reír sin esfuerzo.</li>
+      <li>Amo cómo te preocupas por los demás.</li>
+      <li>Me encanta cómo me entiendes sin palabras.</li>
+      <li>Me enamora tu manera de cuidar lo que amas.</li>
+      <li>Me inspira tu fortaleza.</li>
+      <li>Amo cuando bailas sin música (en tu cuarto o ducha)</li>
+      <li>Me encanta cuando me sorprendes con una mirada.</li>
+      <li>Adoro tu forma de caminar hacia mí.</li>
+      <li>Me llena cómo haces del silencio algo cómodo.</li>
+      <li>Amo cómo haces que cada día tenga sentido.</li>
+      <li>Me encanta cómo tu ternura lo cambia todo.</li>
+      <li>Amo la manera en que celebras mis logros.</li>
+      <li>Me enamora tu atención a los pequeños detalles cuando decides darmelos.</li>
+      <li>Adoro cuando sonríes con los ojos.</li>
+      <li>Me inspira tu pasión por lo que amas.</li>
+      <li>Me llena cuando me abrazas sin razón.</li>
+      <li>Amo cómo me haces sentir suficiente.</li>
+      <li>Me encanta que estés ahí sin que te lo pida.</li>
+      <li>Me fascina tu forma de cuidar de mí.</li>
+      <li>Adoro cómo tu risa ilumina mi mundo.</li>
+      <li>Amo cómo logras calmar mi ansiedad.</li>
+      <li>Me encanta que me mires como si fuera tu universo.</li>
+      <li>Me enamora cómo me haces creer en el amor.</li>
+      <li>Me llena cómo tu presencia basta.</li>
+      <li>Adoro cómo me das paz sin hablar.</li>
+      <li>Me fascina cómo conviertes lo simple en especial.</li>
+      <li>Amo cómo me motivas a mejorar.</li>
+      <li>Me encanta cómo sabes cuándo necesito un abrazo.</li>
+      <li>Me enamora cómo haces que todo duela menos.</li>
+      <li>Me inspira cómo enfrentas tus miedos.</li>
+      <li>Amo cómo sabes estar, incluso en silencio.</li>
+      <li>Me encanta cómo te brillan los ojos al verme.</li>
+      <li>Me llena tu manera de cuidar a los tuyos.</li>
+      <li>Adoro cuando te ríes de tus propios chistes.</li>
+      <li>Me enamora cómo me hablas con cariño.</li>
+      <li>Me fascina cómo te quedas aunque sea difícil.</li>
+      <li>Amo que me dejes ser parte de tu mundo.</li>
+      <li>Me encanta cómo me haces sentir amado.</li>
+      <li>Me llena la seguridad que me das.</li>
+      <li>Amo cómo te emocionas con cosas simples.</li>
+      <li>Me enamora cómo me haces sentir único.</li>
+      <li>Adoro cómo haces que confíe en mí.</li>
+      <li>Me encanta que nunca me sueltes.</li>
+      <li>Amo que me entiendas sin tener que explicarme.</li>
+      <li>Me inspira cómo encuentras belleza en todo.</li>
+      <li>Me llena tu forma de hablar con el alma.</li>
+      <li>Me encanta cómo te entregas a lo que haces.</li>
+      <li>Adoro cómo me haces sentir en casa.</li>
+      <li>Me enamora cómo me das tu tiempo.</li>
+      <li>Amo cómo haces del amor algo fácil.</li>
+      <li>Me encanta cómo me miras cuando crees que no te veo.</li>
+      <li>Me llena cómo compartes lo que amas.</li>
+      <li>Me inspira tu honestidad.</li>
+      <li>Amo cómo me eliges cada día.</li>
+      <li>Me encanta que seas tú.</li>
+      <li>Me enamora cómo te preocupas por mi bienestar.</li>
+      <li>Adoro cómo compartimos el silencio.</li>
+      <li>Me llena cómo tus palabras acarician.</li>
+      <li>Me fascina tu forma de abrazar con el alma.</li>
+      <li>Amo cómo eres mi refugio.</li>
+      <li>Me encanta cómo conviertes un mal día en algo soportable.</li>
+      <li>Me enamora cómo me das fuerzas sin saberlo.</li>
+      <li>Me llena que me trates con tanta ternura.</li>
+      <li>Amo que me hagas sentir seguro.</li>
+      <li>Me encanta que estés en mi vida.</li>
+      <li>Me fascina cómo crees en nosotros.</li>
+      <li>Adoro cómo me haces sentir especial cada día.</li>
+      <li>Me enamora que seas real.</li>
+      <li>Me inspira cómo amas lo que haces.</li>
+      <li>Amo cómo tu risa me salva.</li>
+      <li>Me encanta cómo tus ojos brillan cuando hablas de lo que amas.</li>
+      <li>Me llena la forma en que me cuidas sin pedir nada.</li>
+      <li>Adoro cómo haces de lo cotidiano algo mágico.</li>
+      <li>Me enamora tu calma.</li>
+      <li>Me encanta cómo me haces sentir suficiente.</li>
+      <li>Amo cómo me tomas de la mano.</li>
+      <li>Me inspira que no tengas miedo de sentir.</li>
+      <li>Me fascina cómo vives intensamente.</li>
+      <li>Amo cómo me recuerdas lo bonito de vivir.</li>
+      <li>Me llena que seas mi compañía favorita.</li>
+      <li>Me encanta cómo sabes lo que siento sin que lo diga.</li>
+      <li>Amo cómo haces que mis días tengan sentido.</li>
+      <li>Me enamora tu capacidad de amar.</li>
+      <li>Me fascina que seas tú quien está conmigo.</li>
+      <li>Adoro cómo haces de mi mundo un lugar mejor.</li>
+      <li>Me llena que pienses en mí.</li>
+      <li>Amo cómo me miras cuando estoy distraído.</li>
+      <li>Me encanta cómo te preocupas por mi sonrisa.</li>
+      <li>Me enamora cómo caminas a mi lado.</li>
+      <li>Amo cómo me haces sentir completo.</li>
+      <li>Me encanta cómo me esperas aunque no diga que voy.</li>
+      <li>Amo cómo me escuchas con atención total.</li>
+      <li>Me fascina que recuerdes mis tonterías favoritas.</li>
+<li>Adoro cómo haces que mis inseguridades se sientan pequeñas.</li>
+<li>Me enamora cómo te ríes con ganas.</li>
+<li>Me llena cómo haces que cada despedida duela.</li>
+<li>Amo cómo respetas mis silencios.</li>
+<li>Me inspira tu forma de seguir adelante.</li>
+<li>Me encanta cómo celebras mis rarezas.</li>
+<li>Me enamora cómo haces que confíe en el amor.</li>
+<li>Me fascina cómo llenas de vida un espacio.</li>
+<li>Me encanta que seas tú quien siempre está.</li>
+<li>Adoro cómo conviertes el caos en calma.</li>
+<li>Me llena cómo me aceptas completo.</li>
+<li>Amo cómo me das consuelo sin pedirlo.</li>
+<li>Me encanta cómo recuerdas mis fechas especiales.</li>
+<li>Me enamora cómo me entiendes desde el alma.</li>
+<li>Me fascina cómo me miras cuando hablo de mis sueños.</li>
+<li>Amo cómo tus palabras curan.</li>
+<li>Me encanta cómo logras hacerme reír aún cuando estoy triste.</li>
+<li>Me inspira cómo luchas por lo que quieres.</li>
+<li>Me llena tu forma de ser sincera.</li>
+<li>Adoro cómo haces que todo sea más bonito.</li>
+<li>Me enamora cómo me das lugar en tu vida.</li>
+<li>Amo cómo compartes tus pensamientos más profundos.</li>
+<li>Me encanta cómo logras ver lo mejor de mí.</li>
+<li>Me fascina tu dulzura inesperada.</li>
+<li>Me llena cómo me motivas solo con estar.</li>
+<li>Me encanta cómo haces que me sienta afortunado.</li>
+<li>Me enamora cómo puedes con todo.</li>
+<li>Amo cómo te emocionas con lo simple.</li>
+<li>Me encanta cómo haces que el tiempo pase volando.</li>
+<li>Me inspira cómo haces sentir amada a la gente.</li>
+<li>Me fascina cómo mantienes viva la chispa.</li>
+<li>Me llena cómo pones corazón en cada palabra.</li>
+<li>Amo cómo nunca dejas de intentarlo.</li>
+<li>Me encanta que siempre seas tan tú.</li>
+<li>Me enamora cómo das sentido a lo que siento.</li>
+<li>Me inspira cómo me haces mejor sin querer.</li>
+<li>Me fascina cómo haces hogar donde estés.</li>
+<li>Me encanta cómo me miras como si fuera único.</li>
+<li>Amo cómo piensas en mí incluso en tu caos.</li>
+<li>Me llena cómo haces que me sienta importante.</li>
+<li>Me fascina tu risa cuando te sientes libre.</li>
+<li>Me enamora cómo iluminas los días tristes.</li>
+<li>Me inspira tu forma de querer sin medida.</li>
+<li>Me encanta cómo no te rindes con facilidad.</li>
+<li>Amo cómo haces que me sienta en paz.</li>
+<li>Me llena que me veas incluso cuando me escondo.</li>
+<li>Me fascina cómo tu voz cambia mi humor.</li>
+<li>Me enamora cómo te emocionas con mis sueños.</li>
+<li>Me encanta cómo todo tiene más sentido contigo.</li>
+<li>Amo cómo haces que me sienta menos solo.</li>
+<li>Me llena cómo me haces sentir parte de ti.</li>
+<li>Me inspira tu ternura inesperada.</li>
+<li>Me fascina cómo te acercas cuando estoy lejos.</li>
+<li>Me enamora cómo te das por completo.</li>
+<li>Me encanta cómo tu forma de amar no tiene condiciones.</li>
+<li>Amo cómo haces que el tiempo contigo no pese.</li>
+<li>Me llena que nunca me juzgues.</li>
+<li>Me fascina que me escuches incluso cuando no hablo.</li>
+<li>Me inspira tu forma de mirar con esperanza.</li>
+<li>Me encanta cómo haces de cada beso un mundo.</li>
+<li>Me enamora cómo logras que todo esté bien.</li>
+<li>Amo cómo encuentras belleza en mis errores.</li>
+<li>Me llena cómo conviertes un mensaje en ternura.</li>
+<li>Me fascina que no me exijas ser perfecto.</li>
+<li>Me inspira cómo puedes ser fuerte y dulce.</li>
+<li>Me encanta cómo respetas mi espacio sin alejarte.</li>
+<li>Me enamora cómo haces que mi corazón lata distinto.</li>
+<li>Amo cómo te quedas incluso en mis días grises.</li>
+<li>Me llena cómo haces del amor algo tan natural.</li>
+<li>Me fascina cómo recuerdas lo que me hace feliz.</li>
+<li>Me encanta cómo tu presencia da calor.</li>
+<li>Me enamora cómo no necesitas grandes gestos para amar.</li>
+<li>Me inspira cómo ves magia en lo cotidiano.</li>
+<li>Amo cómo haces que confíe en mí.</li>
+<li>Me llena que no me dejes rendirme.</li>
+<li>Me fascina cómo me ves cuando ni yo me veo.</li>
+<li>Me encanta cómo compartes tu risa con el mundo.</li>
+<li>Me enamora cómo haces del caos algo bello.</li>
+<li>Amo cómo no necesitas palabras para decir tanto.</li>
+<li>Me llena tu compañía, aún en silencio.</li>
+<li>Me fascina cómo me devuelves la fe.</li>
+<li>Me encanta cómo sabes qué decir sin herirme.</li>
+<li>Me enamora cómo haces que quiera quedarme.</li>
+<li>Amo cómo me buscas en medio de la tormenta.</li>
+<li>Me inspira cómo siempre das lo mejor de ti.</li>
+<li>Me llena cómo no te vas aunque podría ser más fácil.</li>
+<li>Me fascina que me des tu mejor versión.</li>
+<li>Me encanta cómo tu mirada cambia mi día.</li>
+<li>Me enamora cómo haces que todo valga la pena.</li>
+<li>Amo cómo me enseñas a amar sin miedo.</li>
+<li>Me llena cómo haces que lo difícil se vea posible.</li>
+<li>Me fascina cómo me llevas de la mano en lo incierto.</li>
+<li>Me encanta cómo haces que todo se sienta nuevo.</li>
+<li>Me enamora cómo me haces sentir deseado.</li>
+<li>Amo cómo me cuidas sin controlarme.</li>
+<li>Me inspira cómo vives cada momento.</li>
+<li>Me llena saber que existes tú.</li>
+<li>Amo cómo haces que mi mente se calme.</li>
+<li>Me encanta cómo respetas mis procesos.</li>
+<li>Me enamora cómo me hablas con el corazón.</li>
+<li>Me llena cómo haces que cada momento cuente.</li>
+<li>Me inspira cómo sabes cuidar sin invadir.</li>
+<li>Me fascina cómo me haces sentir tu prioridad.</li>
+<li>Amo cómo tu risa me da energía.</li>
+<li>Me encanta cómo no me dejas caer.</li>
+<li>Me enamora cómo me descubres todos los días.</li>
+<li>Me llena cómo tu amor me abraza sin tocarme.</li>
+<li>Me fascina cómo me haces sentir parte de ti.</li>
+<li>Amo cómo haces que me sienta libre contigo.</li>
+<li>Me inspira cómo sueñas sin miedo.</li>
+<li>Me encanta cómo haces del "nosotros" algo natural.</li>
+<li>Me enamora cómo haces que me guste ser quien soy.</li>
+<li>Amo cómo logras entender mis silencios.</li>
+<li>Me llena cómo haces que el amor se vea simple.</li>
+<li>Me fascina cómo me haces sonreír con solo estar.</li>
+<li>Me encanta cómo celebras mis logros como tuyos.</li>
+<li>Me enamora cómo siempre encuentras el lado bonito.</li>
+<li>Amo cómo haces que quiera dar lo mejor de mí.</li>
+<li>Me inspira cómo luchas por lo que crees.</li>
+<li>Me llena cómo haces que me sienta necesario.</li>
+<li>Me fascina cómo puedes calmar una tormenta.</li>
+<li>Amo cómo me haces sentir escuchado.</li>
+<li>Me encanta cómo tu voz es mi lugar seguro.</li>
+<li>Me enamora cómo haces que el tiempo no importe.</li>
+<li>Me llena cómo haces del amor un arte.</li>
+<li>Me inspira cómo afrontas los días difíciles.</li>
+<li>Amo cómo haces que mis errores no pesen tanto.</li>
+<li>Me encanta cómo siempre encuentras palabras justas.</li>
+<li>Me fascina cómo tu ternura me sorprende.</li>
+<li>Me enamora cómo tus gestos dicen tanto.</li>
+<li>Me llena cómo logras hacerme sentir en paz.</li>
+<li>Amo cómo haces que cada "te quiero" se sienta nuevo.</li>
+<li>Me inspira cómo valoras lo simple.</li>
+<li>Me encanta cómo me haces sentir orgulloso de tenerte.</li>
+<li>Me enamora cómo me acompañas incluso a la distancia.</li>
+<li>Amo cómo me ayudas a perdonar mi pasado.</li>
+<li>Me llena cómo haces que quiera mejorar.</li>
+<li>Me fascina cómo no huyes de los problemas.</li>
+<li>Me encanta cómo haces hogar incluso en lo temporal.</li>
+<li>Me enamora cómo haces que extrañarte duela bonito.</li>
+<li>Me inspira cómo das sin esperar nada.</li>
+<li>Amo cómo siempre tienes tiempo para mí.</li>
+<li>Me llena cómo me haces sentir amado sin condiciones.</li>
+<li>Me encanta cómo tu ternura no se agota.</li>
+<li>Me enamora cómo me haces sentir elegido.</li>
+<li>Amo cómo haces que nuestras historias se sientan únicas.</li>
+<li>Me inspira cómo haces del cariño un lenguaje.</li>
+<li>Me fascina cómo me haces parte de tus sueños.</li>
+<li>Me encanta cómo haces que confiar sea fácil.</li>
+<li>Me enamora cómo haces que me sienta fuerte.</li>
+<li>Amo cómo conviertes las despedidas en promesas.</li>
+<li>Me llena cómo tu compañía me sana.</li>
+<li>Me inspira cómo haces que cada noche tenga sentido.</li>
+<li>Me encanta cómo haces que un "hola" me dé paz.</li>
+<li>Me enamora cómo me das espacio sin alejarte.</li>
+<li>Amo cómo haces que mis defectos parezcan arte.</li>
+<li>Me fascina cómo te haces presente sin ruido.</li>
+<li>Me llena cómo me sostienes cuando me derrumbo.</li>
+<li>Me inspira cómo nunca dejas de intentar.</li>
+<li>Me encanta cómo haces que amar no dé miedo.</li>
+<li>Me enamora cómo haces que quiera compartir todo contigo.</li>
+<li>Amo cómo haces que mi corazón te busque.</li>
+<li>Me llena cómo cuidas incluso cuando estás cansado.</li>
+<li>Me fascina cómo eres hogar sin ser lugar.</li>
+<li>Me encanta cómo haces que no tema mostrarme vulnerable.</li>
+<li>Me enamora cómo conviertes lo común en especial.</li>
+<li>Amo cómo haces que te extrañe a cada rato.</li>
+<li>Me inspira cómo amas desde el alma.</li>
+<li>Me llena cómo tu risa me acompaña todo el día.</li>
+<li>Me fascina cómo me haces sentir cuando dices mi nombre.</li>
+<li>Me encanta cómo me recuerdas quién soy.</li>
+<li>Me enamora cómo logras que cada día contigo sea distinto.</li>
+<li>Amo cómo haces que una caricia dure para siempre.</li>
+<li>Me llena cómo haces que todo sea más ligero.</li>
+<li>Me inspira cómo vives con tanta intensidad.</li>
+<li>Me encanta cómo haces que mis miedos parezcan pequeños.</li>
+<li>Me enamora cómo haces que me guste el silencio contigo.</li>
+<li>Amo cómo haces que me pierda en tus ojos.</li>
+<li>Me fascina cómo conviertes una mirada en refugio.</li>
+<li>Me llena cómo tu presencia cambia mi humor.</li>
+<li>Me inspira cómo luchas con ternura.</li>
+<li>Me encanta cómo haces que nunca me sienta solo.</li>
+<li>Me enamora cómo te haces presente cuando más te necesito.</li>
+<li>Amo cómo logras hacer de lo cotidiano algo inolvidable.</li>
+<li>Me llena cómo me das tranquilidad con solo respirar cerca.</li>
+<li>Me fascina cómo logras que me sienta digno de amor.</li>
+<li>Me inspira cómo crees en mí incluso cuando yo no lo hago.</li>
+<li>Me encanta cómo te emocionas por mis logros.</li>
+<li>Me enamora cómo haces que las palabras sobren.</li>
+<li>Amo cómo me haces sentir cuando dices “estoy aquí”.</li>
+<li>Me llena cómo no te cansas de amarme.</li>
+<li>Me fascina cómo haces que te admire cada día más.</li>
+<li>Me encanta cómo cuidas hasta mis heridas emocionales.</li>
+<li>Me enamora cómo haces que amar se sienta fácil.</li>
+<li>Amo cómo tu amor me transforma.</li>
+<li>Me llena cómo haces que me sienta importante sin esforzarte.</li>
+<li>Me inspira cómo haces que la vida contigo sea un regalo.</li>
+<li>Me encanta cómo te preocupas por los detalles.</li>
+<li>Me enamora cómo me haces sentir a salvo.</li>
+<li>Amo cómo haces que cada abrazo tenga sentido.</li>
+<li>Me llena cómo caminas a mi lado, sin prisa.</li>
+<li>Me fascina cómo haces de tus palabras caricias.</li>
+<li>Me inspira cómo confías en nosotros.</li>
+<li>Me encanta cómo logras que el día tenga color solo con verte.</li>
+<li>Me enamora cómo siempre tienes una palabra de aliento.</li>
+<li>Amo cómo puedes calmarme con una sola mirada.</li>
+<li>Me llena cómo haces que quiera quedarme para siempre.</li>
+<li>Me fascina cómo sabes lo que necesito sin que lo diga.</li>
+<li>Me encanta cómo haces que las dudas se disuelvan.</li>
+<li>Me enamora cómo me enseñas a ver lo bueno.</li>
+<li>Amo cómo haces que tu amor se sienta limpio.</li>
+<li>Me inspira cómo luchas con el corazón por lo que amas.</li>
+<li>Me llena cómo me das tu tiempo sin condiciones.</li>
+<li>Me fascina cómo conviertes cualquier lugar en hogar.</li>
+<li>Me encanta cómo tu compañía lo cambia todo.</li>
+<li>Me enamora cómo logras que el dolor pese menos.</li>
+<li>Amo cómo me miras cuando no me doy cuenta.</li>
+<li>Me llena cómo me haces sentir orgulloso de ser quien soy.</li>
+<li>Me fascina cómo entiendes mi manera de querer.</li>
+<li>Me encanta cómo tu ternura aparece sin aviso.</li>
+<li>Me enamora cómo no me pides nada, pero me lo das todo.</li>
+<li>Amo cómo sabes cuándo quedarte en silencio conmigo.</li>
+<li>Me inspira cómo conviertes el miedo en impulso.</li>
+<li>Me llena cómo me aceptas incluso con mis sombras.</li>
+<li>Me fascina cómo haces que la espera no duela tanto.</li>
+<li>Me encanta cómo siempre encuentras tiempo para escucharnos.</li>
+<li>Me enamora cómo puedes ser refugio y fuego a la vez.</li>
+<li>Amo cómo me devuelves la fe solo con tu presencia.</li>
+<li>Me llena cómo me haces sentir parte de tu mundo.</li>
+<li>Me fascina cómo me enseñas a perdonar.</li>
+<li>Me encanta cómo haces que mis errores no sean barreras.</li>
+<li>Me enamora cómo me haces sentir valiente.</li>
+<li>Amo cómo me recuerdas que todo va a estar bien.</li>
+<li>Me inspira cómo eres capaz de amar sin miedo.</li>
+<li>Me llena cómo haces que el tiempo juntos valga oro.</li>
+<li>Me fascina cómo sabes cuidar incluso a la distancia.</li>
+<li>Me encanta cómo haces que querer sea tan natural.</li>
+<li>Me enamora cómo haces que mi alma descanse contigo.</li>
+<li>Amo cómo me haces sentir completo.</li>
+<li>Me llena cómo conviertes los días comunes en especiales.</li>
+<li>Me fascina cómo siempre logras que sonría.</li>
+<li>Me inspira cómo haces que lo complicado sea sencillo.</li>
+<li>Me encanta cómo tu voz se convierte en mi calma.</li>
+<li>Me enamora cómo sabes estar presente sin presionar.</li>
+<li>Amo cómo haces que un simple “hola” me emocione.</li>
+<li>Me llena cómo confías en mí incluso cuando no lo merezco.</li>
+<li>Me fascina cómo cuidas lo nuestro con tanto amor.</li>
+<li>Me encanta cómo haces que mi mundo tenga sentido.</li>
+<li>Me enamora cómo sabes entenderme sin juzgarme.</li>
+<li>Amo cómo haces que mis pensamientos se ordenen.</li>
+<li>Me llena cómo das sin pedir nada a cambio.</li>
+<li>Me fascina cómo haces que te extrañe con ternura.</li>
+<li>Me inspira cómo enfrentas la vida con el corazón en la mano.</li>
+<li>Me encanta cómo haces que me guste ser vulnerable contigo.</li>
+<li>Me enamora cómo haces que quiera quedarme siempre.</li>
+<li>Amo cómo tu presencia hace que el miedo se apague.</li>
+<li>Me llena cómo haces que lo difícil parezca pasajero.</li>
+<li>Me fascina cómo sabes tocar el alma sin tocar el cuerpo.</li>
+<li>Me encanta cómo siempre encuentras el lado positivo.</li>
+<li>Me enamora cómo me haces sentir el único.</li>
+<li>Amo cómo logras que no me sienta roto.</li>
+<li>Me llena cómo celebras mis avances, por pequeños que sean.</li>
+<li>Me fascina cómo transformas una caricia en certeza.</li>
+<li>Me inspira cómo cuidas de los que amas.</li>
+<li>Me encanta cómo me abrazas con tus palabras.</li>
+<li>Me enamora cómo no te rindes con facilidad.</li>
+<li>Amo cómo conviertes las noches tristes en consuelo.</li>
+<li>Me llena cómo me haces parte de tus días.</li>
+<li>Me fascina cómo haces que el amor se vea sencillo.</li>
+<li>Me encanta cómo me das paz con solo mirarme.</li>
+<li>Me enamora cómo cuidas hasta mis silencios.</li>
+<li>Amo cómo me haces sentir digno de tu amor.</li>
+<li>Me llena cómo respetas mis tiempos.</li>
+<li>Me fascina cómo sabes dar sin perderte.</li>
+<li>Me inspira cómo te entregas sin miedo.</li>
+<li>Me encanta cómo haces que las distancias se sientan cortas.</li>
+<li>Me enamora cómo me haces sentir amado cada día.</li>
+<li>Amo cómo haces que mi corazón confíe.</li>
+<li>Me llena cómo haces que mi ansiedad se calme.</li>
+<li>Me fascina cómo haces que el amor no duela.</li>
+<li>Me encanta cómo todo parece más fácil contigo.</li>
+<li>Me enamora cómo me haces sentir visto.</li>
+<li>Amo cómo transformas mi tristeza en ternura.</li>
+<li>Me inspira cómo me haces creer en el para siempre.</li>
+<li>Me llena cómo sabes estar sin opacar.</li>
+<li>Me fascina cómo logras hacerme reír incluso sin querer.</li>
+<li>Me encanta cómo me haces sentir suficiente.</li>
+<li>Me enamora cómo haces que el tiempo contigo no se note.</li>
+<li>Amo cómo conviertes cualquier plan en una aventura.</li>
+<li>Me llena cómo haces que el amor no se sienta pesado.</li>
+<li>Me fascina cómo escuchas incluso lo que no digo.</li>
+<li>Me inspira cómo me motivas con tu ejemplo.</li>
+<li>Me encanta cómo tu cariño no cambia con los días.</li>
+<li>Me enamora cómo sabes cuándo sostenerme.</li>
+<li>Amo cómo haces que cada despedida se sienta como un “te espero”.</li>
+<li>Me llena cómo me das fuerzas sin decir nada.</li>
+<li>Me fascina cómo haces que esta lista nunca sea suficiente.</li>
+<li>Amo cómo tus ojos me dan respuestas sin preguntar.</li>
+<li>Me enamora cómo tu energía me llena de vida.</li>
+<li>Me encanta cómo haces que hasta mis días grises tengan color.</li>
+<li>Me llena cómo me haces sentir que pertenezco.</li>
+<li>Me inspira cómo transformas la rutina en magia.</li>
+<li>Amo cómo me haces pensar en ti sin querer.</li>
+<li>Me fascina cómo puedes ser mi calma y mi locura a la vez.</li>
+<li>Me encanta cómo tu voz se me queda en la mente todo el día.</li>
+<li>Me enamora cómo me motivas a seguir mis sueños.</li>
+<li>Amo cómo haces que el amor no se sienta frágil.</li>
+<li>Me llena cómo haces que me sienta afortunado.</li>
+<li>Me inspira cómo defiendes lo que amas con pasión.</li>
+<li>Me encanta cómo logras hacerme reír en los peores momentos.</li>
+<li>Me enamora cómo haces que me sienta seguro de ser quien soy.</li>
+<li>Amo cómo tu abrazo me hace olvidar todo lo demás.</li>
+<li>Me fascina cómo me tomas de la mano y todo parece más fácil.</li>
+<li>Me encanta cómo eres tan tú sin importar lo que digan.</li>
+<li>Me enamora cómo tu honestidad me da confianza.</li>
+<li>Amo cómo me haces sentir que soy suficiente.</li>
+<li>Me llena cómo tu presencia cambia por completo mi día.</li>
+<li>Me inspira cómo te preocupas por los demás.</li>
+<li>Me encanta cómo me ves como nadie más lo hace.</li>
+<li>Me enamora cómo haces que amar se sienta natural.</li>
+<li>Amo cómo no necesitas grandes gestos para demostrar tu amor.</li>
+<li>Me fascina cómo me haces sentir tan especial con tan poco.</li>
+<li>Me encanta cómo me haces sentir afortunado cada día.</li>
+<li>Me enamora cómo siempre sabes qué decir.</li>
+<li>Amo cómo tu forma de amar me sana sin pedirlo.</li>
+<li>Me llena cómo haces que tu recuerdo me acompañe siempre.</li>
+<li>Me inspira cómo logras amar sin condiciones.</li>
+<li>Me encanta cómo me enseñas a ver la vida con más esperanza.</li>
+<li>Me enamora cómo haces que hasta mis errores tengan valor.</li>
+<li>Amo cómo siempre estás, aunque no diga que te necesito.</li>
+<li>Me fascina cómo haces que el amor no pese.</li>
+<li>Me encanta cómo logras que todo tenga sentido solo con tu presencia.</li>
+<li>Me enamora cómo haces que me emocione con cosas simples.</li>
+<li>Amo cómo me das tranquilidad sin tener que hablar.</li>
+<li>Me llena cómo haces que mi caos se ordene.</li>
+<li>Me inspira cómo eres capaz de ver luz en la oscuridad.</li>
+<li>Me encanta cómo cuidas nuestras pequeñas tradiciones.</li>
+<li>Me enamora cómo haces que confiar no sea difícil.</li>
+<li>Amo cómo haces que mi corazón se sienta en casa.</li>
+<li>Me fascina cómo conviertes los silencios en compañía.</li>
+<li>Me encanta cómo respetas mis espacios sin alejarte.</li>
+<li>Me enamora cómo haces que me guste estar contigo incluso en silencio.</li>
+<li>Amo cómo das amor incluso cuando estás cansado.</li>
+<li>Me llena cómo te preocupas por lo que yo siento.</li>
+<li>Me inspira cómo eres tú sin miedo al qué dirán.</li>
+<li>Me encanta cómo te tomas el tiempo de entenderme.</li>
+<li>Me enamora cómo haces que te admire cada día más.</li>
+<li>Amo cómo haces que te busque aún sin darme cuenta.</li>
+<li>Me fascina cómo compartes conmigo lo que te apasiona.</li>
+<li>Me encanta cómo te emocionas por cosas pequeñas.</li>
+<li>Me enamora cómo tus palabras me levantan.</li>
+<li>Amo cómo tu amor no necesita explicación.</li>
+<li>Me llena cómo me recuerdas que no estoy solo.</li>
+<li>Me inspira cómo mantienes tu esencia intacta.</li>
+<li>Me encanta cómo todo en ti me da calma.</li>
+<li>Me enamora cómo haces que tu amor sea mi refugio.</li>
+<li>Amo cómo siempre encuentras una forma de estar conmigo.</li>
+<li>Me fascina cómo logras ver lo mejor en mí.</li>
+<li>Me encanta cómo me das razones para seguir creyendo.</li>
+<li>Me enamora cómo haces que el tiempo se detenga.</li>
+<li>Amo cómo tu sonrisa es mi lugar favorito.</li>
+<li>Me llena cómo no necesitas palabras para abrazarme.</li>
+<li>Me inspira cómo luchas por lo que importa.</li>
+<li>Me encanta cómo no tienes miedo de mostrar tus emociones.</li>
+<li>Me enamora cómo me das amor incluso cuando no lo pido.</li>
+<li>Amo cómo haces que cada momento sea valioso.</li>
+<li>Me fascina cómo haces que mi corazón no te olvide.</li>
+<li>Me encanta cómo cuidas de mí incluso en tus pensamientos.</li>
+<li>Me enamora cómo conviertes una mirada en promesa.</li>
+<li>Amo cómo haces que no tema a lo que viene.</li>
+<li>Me llena cómo haces que mis heridas cicatricen.</li>
+<li>Me inspira cómo me enseñas a amar mejor.</li>
+<li>Me encanta cómo tu esencia me abraza.</li>
+<li>Me enamora cómo no dejas de creer en nosotros.</li>
+<li>Amo cómo haces que mi alma se sienta acompañada.</li>
+<li>Me fascina cómo tienes la capacidad de sanar con solo estar.</li>
+<li>Me encanta cómo haces que me sienta más fuerte contigo.</li>
+<li>Me enamora cómo todo se ve diferente cuando estás cerca.</li>
+<li>Amo cómo sabes cuidar sin controlar.</li>
+<li>Me llena cómo tu existencia da sentido a la mía.</li>
+<li>Me inspira cómo caminas a mi ritmo sin apurarme.</li>
+<li>Me encanta cómo haces que cada despedida tenga promesa.</li>
+<li>Me enamora cómo haces que me sienta amado en mis peores días.</li>
+<li>Amo cómo haces que mi corazón lata más lento, más feliz.</li>
+<li>Me fascina cómo conviertes lo cotidiano en extraordinario.</li>
+<li>Me encanta cómo te entregas con el alma.</li>
+<li>Me enamora cómo me haces sentir siempre bienvenido.</li>
+<li>Amo cómo tu risa cambia mi estado de ánimo.</li>
+<li>Me llena cómo haces que todo valga la pena.</li>
+<li>Me inspira cómo mantienes viva la llama sin esfuerzo.</li>
+<li>Me encanta cómo me enseñas sin imponerte.</li>
+<li>Me enamora cómo haces que me sienta amado, no solo querido.</li>
+<li>Amo cómo haces que te elija cada día.</li>
+<li>Me fascina cómo logras ser paz, fuego y destino.</li>
+<li>Me encanta cómo me das tu tiempo con tanto amor.</li>
+<li>Me enamora cómo haces que el amor se sienta nuevo.</li>
+<li>Amo cómo todo contigo se convierte en hogar.</li>
+<li>Amo cómo haces que la confianza crezca sin esfuerzo.</li>
+<li>Me encanta cómo tus manos saben encontrar las mías en la oscuridad.</li>
+<li>Me fascina cómo haces que mi sonrisa sea constante.</li>
+<li>Me enamora cómo te adaptas a mis locuras.</li>
+<li>Amo cómo respetas mis silencios.</li>
+<li>Me llena cómo tus palabras siempre llegan en el momento justo.</li>
+<li>Me inspira cómo enfrentas los problemas sin perder la calma.</li>
+<li>Me encanta cómo compartes tus sueños conmigo.</li>
+<li>Me enamora cómo haces que el tiempo a tu lado sea eterno.</li>
+<li>Amo cómo tu risa se convierte en mi melodía favorita.</li>
+<li>Me fascina cómo tu mirada refleja sinceridad.</li>
+<li>Me encanta cómo tu paciencia me enseña a ser mejor.</li>
+<li>Me enamora cómo haces que lo complicado sea simple.</li>
+<li>Amo cómo me haces sentir que todo es posible.</li>
+<li>Me llena cómo cuidas hasta los detalles más pequeños.</li>
+<li>Me inspira cómo siempre ves lo mejor en las personas.</li>
+<li>Me encanta cómo tus abrazos son mi refugio seguro.</li>
+<li>Me enamora cómo haces que el mundo tenga sentido.</li>
+<li>Amo cómo haces que me guste despertar a tu lado.</li>
+<li>Me fascina cómo nunca te rindes con nosotros.</li>
+<li>Me encanta cómo tus besos calman mis tormentas.</li>
+<li>Me enamora cómo siempre encuentras la forma de sorprenderme.</li>
+<li>Amo cómo me haces querer ser mejor persona.</li>
+<li>Me llena cómo me haces sentir vivo.</li>
+<li>Me inspira cómo tu amor es tan generoso.</li>
+<li>Me encanta cómo tus palabras me motivan cada día.</li>
+<li>Me enamora cómo haces que todo sea más fácil.</li>
+<li>Amo cómo confías en mí con todo tu corazón.</li>
+<li>Me fascina cómo haces que me sienta único.</li>
+<li>Me encanta cómo compartes conmigo tus momentos de vulnerabilidad.</li>
+<li>Me enamora cómo tu sinceridad me toca el alma.</li>
+<li>Amo cómo haces que me importe más el "nosotros" que el "yo".</li>
+<li>Me llena cómo tu sonrisa ilumina mi día.</li>
+<li>Me inspira cómo luchas por lo que quieres sin miedo.</li>
+<li>Me encanta cómo tus palabras pueden curar heridas.</li>
+<li>Me enamora cómo me haces sentir querido sin condiciones.</li>
+<li>Amo cómo haces que lo cotidiano sea especial.</li>
+<li>Me fascina cómo tu amor se siente como un abrazo constante.</li>
+<li>Me encanta cómo haces que mi corazón se acelere.</li>
+<li>Me enamora cómo tus detalles hablan más que mil palabras.</li>
+<li>Amo cómo haces que no quiera estar en ningún otro lugar que contigo.</li>
+<li>Me llena cómo eres mi calma en medio del caos.</li>
+<li>Me inspira cómo afrontas la vida con valentía.</li>
+<li>Me encanta cómo tus sueños se entrelazan con los míos.</li>
+<li>Me enamora cómo haces que cada día sea una nueva aventura.</li>
+<li>Amo cómo me haces sentir comprendido.</li>
+<li>Me fascina cómo tu amor me fortalece.</li>
+<li>Me encanta cómo haces que el tiempo contigo no se sienta suficiente.</li>
+<li>Me enamora cómo siempre tienes palabras de aliento.</li>
+<li>Amo cómo haces que me sienta importante.</li>
+<li>Me llena cómo me haces reír hasta en mis días malos.</li>
+<li>Me inspira cómo amas con toda el alma.</li>
+<li>Me encanta cómo haces que todo sea mejor solo con estar.</li>
+<li>Me enamora cómo haces que mi corazón no deje de latir por ti.</li>
+<li>Amo cómo me haces soñar despierto.</li>
+<li>Me fascina cómo me apoyas sin condiciones.</li>
+<li>Me encanta cómo te preocupas por mis pequeñas cosas.</li>
+<li>Me enamora cómo tu presencia transforma mi mundo.</li>
+<li>Amo cómo haces que quiera compartirlo todo contigo.</li>
+<li>Me llena cómo haces que me sienta afortunado cada instante.</li>
+<li>Me inspira cómo eres la mejor versión de ti mismo.</li>
+<li>Me encanta cómo tus abrazos tienen el poder de sanar.</li>
+<li>Me enamora cómo tu amor es libre y profundo.</li>
+<li>Amo cómo me haces sentir que juntos podemos con todo.</li>
+<li>Me fascina cómo haces que no tema al futuro.</li>
+<li>Me encanta cómo tu voz es música para mis oídos.</li>
+<li>Me enamora cómo me enseñas a amar sin miedo.</li>
+<li>Amo cómo me haces sentir que soy parte de tu historia.</li>
+<li>Me llena cómo me haces querer luchar por nosotros.</li>
+<li>Me inspira cómo tu amor no conoce límites.</li>
+<li>Me encanta cómo me haces sentir que todo es posible a tu lado.</li>
+<li>Me enamora cómo tu sinceridad me llena de paz.</li>
+<li>Amo cómo haces que mis días tengan sentido.</li>
+<li>Me fascina cómo haces que me quiera más a mí mismo.</li>
+<li>Me encanta cómo te entregas sin reservas.</li>
+<li>Me enamora cómo haces que mis problemas se sientan más ligeros.</li>
+<li>Amo cómo me haces sentir que no estoy solo.</li>
+<li>Me llena cómo me haces reír sin razón.</li>
+<li>Me inspira cómo tu amor es constante y verdadero.</li>
+<li>Me encanta cómo tus detalles me hacen feliz.</li>
+<li>Me enamora cómo me haces sentir que todo es posible juntos.</li>
+<li>Amo cómo me enseñas el verdadero significado del amor.</li>
+<li>Me fascina cómo haces que mi corazón se abra.</li>
+<li>Me encanta cómo haces que quiera compartir mis sueños contigo.</li>
+<li>Me enamora cómo haces que me sienta comprendido sin explicaciones.</li>
+<li>Amo cómo haces que mi mundo sea mejor.</li>
+<li>Me llena cómo tenemos a nuestro hijos bachi y apolo.</li>
+<li>Me inspira cómo tu amor me impulsa a crecer.</li>
+<li>Me encanta cómo me haces sentir que valgo la pena.</li>
+<li>Me enamora cómo me haces sentir que soy tu prioridad.</li>
+<li>Amo cómo tu amor me transforma.</li>
+<li>Me fascina cómo haces que todo tenga sentido.</li>
+<li>Me encanta cómo haces que te quiera más cada día.</li>
+<li>Me enamora cómo tu risa es mi sonido favorito.</li>
+<li>Amo cómo me haces sentir seguro y protegido.</li>
+<li>Me llena cómo haces que mi vida sea más alegre.</li>
+<li>Me inspira cómo tu amor me da fuerzas.</li>
+<li>Me encanta cómo haces que mi corazón no deje de soñar.</li>
+<li>Me enamora cómo haces que el amor sea sencillo.</li>
+<li>Amo cómo haces que cada momento contigo sea eterno.</li>
+<li>Amo cómo haces que cada día juntos sea una aventura nueva.</li>
+<li>Me encanta cómo tus palabras me dan paz en medio del ruido.</li>
+<li>Me fascina cómo me haces sentir vivo con solo una mirada.</li>
+<li>Me enamora cómo confías en mí incluso en lo difícil.</li>
+<li>Amo cómo haces que las horas pasen volando cuando estamos juntos.</li>
+<li>Me llena cómo tu risa se contagia y alegra todo a mi alrededor.</li>
+<li>Me inspira cómo afrontas los retos con valentía y optimismo.</li>
+<li>Me encanta cómo tus manos saben dar amor y calma.</li>
+<li>Me enamora cómo tu presencia me hace sentir completo.</li>
+<li>Amo cómo me haces sentir que pertenezco a un lugar seguro.</li>
+<li>Me fascina cómo tu cariño transforma cualquier tristeza en esperanza.</li>
+<li>Me encanta cómo escuchas sin juzgar.</li>
+<li>Me enamora cómo me haces querer ser mejor para ti y para mí.</li>
+<li>Amo cómo en tus brazos encuentro mi refugio.</li>
+<li>Me llena cómo me haces sentir que soy lo más importante para ti.</li>
+<li>Me inspira cómo nunca pierdes la fe en nosotros.</li>
+<li>Me encanta cómo tus pequeños gestos demuestran un amor gigante.</li>
+<li>Me enamora cómo me haces reír sin esfuerzo.</li>
+<li>Amo cómo tu voz es mi canción favorita.</li>
+<li>Me fascina cómo siempre tienes una palabra amable para mí.</li>
+<li>Me encanta cómo me apoyas incluso cuando no estoy seguro de mí mismo.</li>
+<li>Me enamora cómo tu amor me impulsa a crecer cada día.</li>
+<li>Amo cómo me haces sentir que todo es posible si estamos juntos.</li>
+<li>Me llena cómo conviertes las dificultades en aprendizajes.</li>
+<li>Me inspira cómo tu amor es constante y genuino.</li>
+<li>Me encanta cómo me haces sentir que soy digno de amar.</li>
+<li>Me enamora cómo tu ternura me envuelve.</li>
+<li>Amo cómo haces que la distancia no sea un obstáculo para nuestro amor.</li>
+<li>Me fascina cómo me enseñas el valor de la paciencia y la comprensión.</li>
+<li>Me encanta cómo te entregas sin reservas.</li>
+<li>Me enamora cómo tu sinceridad fortalece nuestra relación.</li>
+<li>Amo cómo me haces sentir especial sin necesidad de grandes gestos.</li>
+<li>Me llena cómo tu sonrisa ilumina mis días más oscuros.</li>
+<li>Me inspira cómo me motivas a perseguir mis sueños.</li>
+<li>Me encanta cómo me haces sentir que pertenezco a tu mundo.</li>
+<li>Me enamora cómo tu amor es un refugio seguro para mi alma.</li>
+<li>Amo cómo me haces sentir que puedo ser yo mismo contigo.</li>
+<li>Me fascina cómo transformas los momentos simples en recuerdos inolvidables.</li>
+<li>Me encanta cómo me haces sentir amado incluso cuando estoy vulnerable.</li>
+<li>Me enamora cómo me aceptas con mis defectos y virtudes.</li>
+<li>Amo cómo tus palabras siempre me levantan el ánimo.</li>
+<li>Me llena cómo me haces sentir que soy tu prioridad.</li>
+<li>Me inspira cómo enfrentas la vida con alegría y fortaleza.</li>
+<li>Me encanta cómo tus ojos brillan cuando me miras.</li>
+<li>Me enamora cómo me haces sentir que estoy en casa cuando estoy contigo.</li>
+<li>Amo cómo me haces reír incluso en los momentos difíciles.</li>
+<li>Me fascina cómo tu amor me da seguridad.</li>
+<li>Me encanta cómo compartimos sueños y planes juntos.</li>
+<li>Me enamora cómo tu energía positiva me contagia.</li>
+<li>Amo cómo haces que mi corazón se sienta ligero.</li>
+<li>Me llena cómo me haces sentir valorado cada día.</li>
+<li>Me inspira cómo no dejas de creer en nosotros.</li>
+<li>Me encanta cómo haces que te extrañe cuando no estás.</li>
+<li>Me enamora cómo tus palabras son siempre sinceras y dulces.</li>
+<li>Amo cómo me haces sentir que juntos somos invencibles.</li>
+<li>Me fascina cómo compartimos tanto sin necesidad de hablar siempre.</li>
+<li>Me encanta cómo haces que el amor sea sencillo y puro.</li>
+<li>Me enamora cómo tu sonrisa es mi motivación diaria.</li>
+<li>Amo cómo me haces sentir que puedo confiar plenamente en ti.</li>
+<li>Me llena cómo me haces sentir que siempre estás ahí para mí.</li>
+<li>Me inspira cómo tu amor me hace querer ser mejor cada día.</li>
+<li>Me encanta cómo cada detalle tuyo me enamora más.</li>
+<li>Me enamora cómo me haces sentir que soy amado por completo.</li>
+<li>Amo cómo tu abrazo me da fuerza para enfrentar cualquier cosa.</li>
+<li>Me fascina cómo tus palabras me llegan al alma.</li>
+<li>Me encanta cómo haces que mis miedos desaparezcan.</li>
+<li>Me enamora cómo tu amor es constante, sin condiciones.</li>
+<li>Amo cómo me haces sentir que juntos podemos superar cualquier dificultad.</li>
+<li>Me llena cómo me haces sentir que soy importante en tu vida.</li>
+<li>Me inspira cómo mantienes la esperanza viva en nuestro amor.</li>
+<li>Me encanta cómo haces que cada día sea mejor que el anterior.</li>
+<li>Me enamora cómo tus gestos de amor son tan sinceros.</li>
+<li>Amo cómo tu presencia me da calma y alegría.</li>
+<li>Me fascina cómo compartimos momentos que nunca olvidaré.</li>
+<li>Me encanta cómo haces que me quiera más a mí mismo.</li>
+<li>Me enamora cómo me enseñas a amar sin miedo ni dudas.</li>
+<li>Amo cómo me haces sentir que soy capaz de todo.</li>
+<li>Me llena cómo me haces sentir que nunca estoy solo.</li>
+<li>Me inspira cómo tu amor me llena de energía positiva.</li>
+<li>Me encanta cómo tu risa ilumina mis días.</li>
+<li>Me enamora cómo haces que mi corazón lata más fuerte.</li>
+<li>Amo cómo tus palabras son un refugio para mi alma.</li>
+<li>Me fascina cómo haces que los problemas se vuelvan más pequeños.</li>
+<li>Me encanta cómo me haces querer compartir mi vida contigo.</li>
+<li>Me enamora cómo tu amor me da esperanza en el futuro.</li>
+<li>Amo cómo me haces sentir que soy la persona más importante para ti.</li>
+<li>Me llena cómo tu cariño me llega hasta lo más profundo.</li>
+<li>Me inspira cómo tu amor me impulsa a ser feliz.</li>
+<li>Me encanta cómo haces que mis sueños se sientan posibles.</li>
+<li>Me enamora cómo haces que mi corazón sonría.</li>
+<li>Amo cómo me haces sentir que estoy completo contigo.</li>
+<li>Me fascina cómo me apoyas en todas mis decisiones.</li>
+<li>Me encanta cómo haces que el amor sea simple y real.</li>
+<li>Me enamora cómo me haces sentir que somos uno.</li>
+<li>Amo cómo haces que cada momento juntos sea inolvidable.</li>
+<li>Me llena cómo tu cariño es constante y verdadero.</li>
+<li>Me inspira cómo me enseñas a amar sin condiciones.</li>
+<li>Me encanta cómo haces que la vida sea más dulce.</li>
+<li>Me enamora cómo me haces sentir que siempre tengo un hogar contigo.</li>
+<li>Amo cómo haces que todo en mí ame todo en ti.</li>
+<li>Amo cómo tus ojos tienen el brillo que calma mis miedos.</li>
+<li>Me encanta cómo tu voz se convierte en mi refugio favorito.</li>
+<li>Me fascina cómo me haces sentir que no hay imposibles a tu lado.</li>
+<li>Me enamora cómo me entiendes sin que diga una palabra.</li>
+<li>Amo cómo haces que mis días grises tengan color.</li>
+<li>Me llena cómo tus abrazos borran mis tristezas.</li>
+<li>Me inspira cómo siempre buscas lo mejor para nosotros.</li>
+<li>Me encanta cómo cada gesto tuyo habla de amor sincero.</li>
+<li>Me enamora cómo tu sonrisa puede cambiar mi estado de ánimo.</li>
+<li>Amo cómo haces que las pequeñas cosas sean grandes momentos.</li>
+<li>Me fascina cómo me haces sentir seguro en cualquier lugar.</li>
+<li>Me encanta cómo confías en mí plenamente.</li>
+<li>Me enamora cómo compartes conmigo tus sueños y miedos.</li>
+<li>Amo cómo haces que el tiempo se detenga cuando estamos juntos.</li>
+<li>Me llena cómo tu ternura me abraza el corazón.</li>
+<li>Me inspira cómo enfrentas cada día con optimismo.</li>
+<li>Me encanta cómo me haces reír hasta cuando no quiero.</li>
+<li>Me enamora cómo tu presencia es mi paz.</li>
+<li>Amo cómo me haces sentir que siempre hay esperanza.</li>
+<li>Me fascina cómo me enseñas a ver lo bueno en todo.</li>
+<li>Me encanta cómo tu amor es constante y sincero.</li>
+<li>Me enamora cómo me haces querer compartir mi vida contigo.</li>
+<li>Amo cómo me haces sentir que soy parte de algo grande.</li>
+<li>Me llena cómo tus palabras me dan fuerza para seguir.</li>
+<li>Me inspira cómo tu amor nunca se cansa.</li>
+<li>Me encanta cómo haces que mi corazón sonría solo con verte.</li>
+<li>Me enamora cómo haces que cada día sea especial.</li>
+<li>Amo cómo me haces sentir que somos un equipo.</li>
+<li>Me fascina cómo me apoyas en cada paso.</li>
+<li>Me encanta cómo tu mirada transmite paz y amor.</li>
+<li>Me enamora cómo tu risa es la banda sonora de mi vida.</li>
+<li>Amo cómo me haces sentir que puedo ser vulnerable contigo.</li>
+<li>Me llena cómo me haces sentir que nunca estoy solo.</li>
+<li>Me inspira cómo tu amor es la luz que guía mis días.</li>
+<li>Me encanta cómo me haces querer ser la mejor versión de mí mismo.</li>
+<li>Me enamora cómo compartimos tanto sin decir nada.</li>
+<li>Amo cómo me haces sentir que soy importante para ti.</li>
+<li>Me fascina cómo tus detalles pequeños son grandes gestos.</li>
+<li>Me encanta cómo me haces sentir amado sin condiciones.</li>
+<li>Me enamora cómo haces que todo parezca posible.</li>
+<li>Amo cómo tus abrazos son mi refugio en la tormenta.</li>
+<li>Me llena cómo tu sonrisa ilumina hasta mis pensamientos.</li>
+<li>Me inspira cómo siempre tienes palabras de aliento para mí.</li>
+<li>Me encanta cómo me haces sentir que soy digno de amor.</li>
+<li>Me enamora cómo me haces reír incluso en los días difíciles.</li>
+<li>Amo cómo tu amor me da fuerzas para seguir adelante.</li>
+<li>Me fascina cómo haces que mis problemas parezcan menos.</li>
+<li>Me encanta cómo compartimos sueños y esperanzas.</li>
+<li>Me enamora cómo me haces sentir que puedo contar contigo siempre.</li>
+<li>Amo cómo me haces sentir que soy tu persona favorita.</li>
+<li>Me llena cómo tu cariño me llega hasta lo más profundo.</li>
+<li>Me inspira cómo amas con el corazón abierto.</li>
+<li>Me encanta cómo me haces sentir que todo tiene sentido contigo.</li>
+<li>Me enamora cómo haces que mis días sean mejores.</li>
+<li>Amo cómo tu amor me llena de paz y felicidad.</li>
+<li>Me fascina cómo me haces sentir que todo es posible juntos.</li>
+<li>Me encanta cómo tu sinceridad fortalece nuestra relación.</li>
+<li>Me enamora cómo me haces sentir que soy único para ti.</li>
+<li>Amo cómo me haces querer compartir mi vida entera contigo.</li>
+<li>Me llena cómo tus palabras siempre son un bálsamo para mi alma.</li>
+<li>Me inspira cómo tu amor es firme y constante.</li>
+<li>Me encanta cómo haces que cada momento sea inolvidable.</li>
+<li>Me enamora cómo me haces sentir que soy amado sin reservas.</li>
+<li>Amo cómo tus abrazos me dan calma y seguridad.</li>
+<li>Me fascina cómo me haces reír con solo una mirada.</li>
+<li>Me encanta cómo me haces sentir que podemos superar cualquier cosa.</li>
+<li>Me enamora cómo compartimos silencios cómodos y felices.</li>
+<li>Amo cómo me haces sentir que mi felicidad es importante para ti.</li>
+<li>Me llena cómo tu cariño es un refugio para mi corazón.</li>
+<li>Me inspira cómo tu amor me hace querer ser mejor.</li>
+<li>Me encanta cómo haces que mis días tengan color.</li>
+<li>Me enamora cómo tu amor es un regalo que valoro cada día.</li>
+<li>Amo cómo me haces sentir que juntos somos invencibles.</li>
+<li>Me fascina cómo me apoyas sin dudar.</li>
+<li>Me encanta cómo haces que mi corazón se sienta en casa.</li>
+<li>Me enamora cómo me haces soñar con un futuro juntos.</li>
+<li>Amo cómo tu risa es mi sonido favorito.</li>
+<li>Me llena cómo me haces sentir que soy la persona más importante para ti.</li>
+<li>Me inspira cómo tu amor me da esperanza.</li>
+<li>Me encanta cómo haces que la vida sea más hermosa.</li>
+<li>Me enamora cómo tu cariño me llena de alegría.</li>
+<li>Amo cómo me haces sentir que soy amado a pesar de mis defectos.</li>
+<li>Me fascina cómo compartimos planes y proyectos con ilusión.</li>
+<li>Me encanta cómo me haces sentir que nunca estoy solo.</li>
+<li>Me enamora cómo tu amor es una constante en mi vida.</li>
+<li>Amo cómo me haces querer ser mejor cada día.</li>
+<li>Me llena cómo tu sonrisa es mi energía diaria.</li>
+<li>Me inspira cómo me haces creer en el amor verdadero.</li>
+<li>Me encanta cómo me haces sentir que soy valorado.</li>
+<li>Me enamora cómo me haces reír hasta que me duele el corazón.</li>
+<li>Amo cómo tus palabras me llenan de paz.</li>
+<li>Me fascina cómo me haces sentir que puedo contar contigo.</li>
+<li>Me encanta cómo me haces sentir amado sin condiciones.</li>
+<li>Me enamora cómo tu amor es la luz en mis días oscuros.</li>
+<li>Amo cómo me haces sentir que somos uno solo.</li>
+<li>Me llena cómo me haces querer luchar por nuestro amor.</li>
+<li>Me inspira cómo tu cariño es constante y sincero.</li>
+<li>Me encanta cómo cada día a tu lado es una bendición.</li>
+<li>Me enamora cómo me haces sentir que soy tu mundo.</li>
+<li>Amo cómo haces que cada momento contigo sea único e inolvidable.</li>
+<li>Amo cómo tus palabras me acarician el alma.</li>
+<li>Me encanta cómo tus gestos hablan más que mil palabras.</li>
+<li>Me fascina cómo haces que el silencio sea cómodo y dulce.</li>
+<li>Me enamora cómo tu mirada me hace sentir especial.</li>
+<li>Amo cómo transformas mis días aburridos en momentos mágicos.</li>
+<li>Me llena cómo haces que mis preocupaciones desaparezcan.</li>
+<li>Me inspira cómo afrontas la vida con tanta pasión.</li>
+<li>Me encanta cómo me haces sentir que valgo mucho para ti.</li>
+<li>Me enamora cómo me haces querer compartir cada instante contigo.</li>
+<li>Amo cómo haces que el amor sea sencillo y natural.</li>
+<li>Me fascina cómo me haces sentir que todo es posible a tu lado.</li>
+<li>Me encanta cómo tu sonrisa es mi medicina diaria.</li>
+<li>Me enamora cómo tus palabras me llegan directo al corazón.</li>
+<li>Amo cómo haces que me sienta seguro y protegido.</li>
+<li>Me llena cómo me haces sentir que soy tu prioridad.</li>
+<li>Me inspira cómo tu amor me motiva a ser mejor persona.</li>
+<li>Me encanta cómo haces que mi mundo sea más brillante.</li>
+<li>Me enamora cómo compartimos sueños sin miedo.</li>
+<li>Amo cómo me haces sentir que somos invencibles juntos.</li>
+<li>Me fascina cómo tu ternura me envuelve y me calma.</li>
+<li>Me encanta cómo me haces reír incluso en mis peores días.</li>
+<li>Me enamora cómo haces que la distancia no nos separe.</li>
+<li>Amo cómo me haces sentir que soy tu hogar.</li>
+<li>Me llena cómo tus palabras me levantan el ánimo.</li>
+<li>Me inspira cómo nunca pierdes la fe en nosotros.</li>
+<li>Me encanta cómo tus abrazos son mi refugio seguro.</li>
+<li>Me enamora cómo me haces sentir que puedo confiar en ti ciegamente.</li>
+<li>Amo cómo me haces sentir que el amor es nuestra fuerza.</li>
+<li>Me fascina cómo tu presencia me llena de paz.</li>
+<li>Me encanta cómo haces que cada día a tu lado sea una bendición.</li>
+<li>Me enamora cómo compartimos risas y lágrimas.</li>
+<li>Amo cómo me haces sentir que soy amado sin condiciones.</li>
+<li>Me llena cómo me apoyas en cada paso que doy.</li>
+<li>Me inspira cómo tu amor es constante y fiel.</li>
+<li>Me encanta cómo haces que mi corazón se sienta completo.</li>
+<li>Me enamora cómo tus palabras me hacen soñar despierto.</li>
+<li>Amo cómo me haces sentir que juntos podemos con todo.</li>
+<li>Me fascina cómo compartimos momentos simples pero felices.</li>
+<li>Me encanta cómo tu sonrisa ilumina mis días grises.</li>
+<li>Me enamora cómo me haces sentir que soy único para ti.</li>
+<li>Amo cómo me haces querer ser la mejor versión de mí mismo.</li>
+<li>Me llena cómo tu cariño me llega hasta lo más profundo.</li>
+<li>Me inspira cómo me enseñas el verdadero significado del amor.</li>
+<li>Me encanta cómo haces que la vida sea más dulce contigo.</li>
+<li>Me enamora cómo me haces sentir que somos uno solo.</li>
+<li>Amo cómo tus abrazos me dan fuerza y calma.</li>
+<li>Me fascina cómo me haces reír con solo una mirada.</li>
+<li>Me encanta cómo haces que los problemas sean menos cuando estás conmigo.</li>
+<li>Me enamora cómo compartimos sueños y esperanzas.</li>
+<li>Amo cómo me haces sentir que puedo contar contigo siempre.</li>
+<li>Me llena cómo me haces sentir que soy la persona más importante para ti.</li>
+<li>Me inspira cómo tu amor me da esperanza.</li>
+<li>Me encanta cómo haces que la vida sea más hermosa.</li>
+<li>Me enamora cómo tu cariño me llena de alegría.</li>
+<li>Amo cómo me haces sentir que soy amado a pesar de mis defectos.</li>
+<li>Me fascina cómo compartimos planes y proyectos con ilusión.</li>
+<li>Me encanta cómo me haces sentir que nunca estoy solo.</li>
+<li>Me enamora cómo tu amor es una constante en mi vida.</li>
+<li>Amo cómo me haces querer ser mejor cada día.</li>
+<li>Me llena cómo tu sonrisa es mi energía diaria.</li>
+<li>Me inspira cómo me haces creer en el amor verdadero.</li>
+<li>Me encanta cómo me haces sentir que soy valorado.</li>
+<li>Me enamora cómo me haces reír hasta que me duele el corazón.</li>
+<li>Amo cómo tus palabras me llenan de paz.</li>
+<li>Me fascina cómo me haces sentir que puedo contar contigo.</li>
+<li>Me encanta cómo haces que saque mis ojos de venado.</li>
+<li>Me enamora cómo tu amor es la luz en mis días oscuros.</li>
+<li>Amo cómo me haces sentir que somos uno solo.</li>
+<li>Me llena cómo me haces querer luchar por nuestro amor.</li>
+<li>Me inspira cómo tu cariño es constante y sincero.</li>
+<li>Me encanta cómo cada día a tu lado es una bendición.</li>
+<li>Me enamora cómo me haces sentir que soy tu mundo.</li>
+<li>Amo cómo haces que cada momento contigo sea único e irrepetible.</li>
+<li>Me fascina cómo me entiendes sin que diga una palabra.</li>
+<li>Me encanta cómo tus palabras me hacen sentir vivo.</li>
+<li>Me enamora cómo compartimos silencios cómodos y felices.</li>
+<li>Amo cómo me haces sentir que no necesito a nadie más.</li>
+<li>Me llena cómo me apoyas sin reservas.</li>
+<li>Me inspira cómo tu amor me hace fuerte.</li>
+<li>Me encanta cómo haces que cada día valga la pena.</li>
+<li>Me enamora cómo me haces sentir que soy tu prioridad.</li>
+<li>Amo cómo tus caricias son un lenguaje propio entre nosotros.</li>
+<li>Me fascina cómo tu risa es contagiosa.</li>
+<li>Me encanta cómo me haces sentir que somos perfectos juntos.</li>
+<li>Me enamora cómo me haces querer compartir todo contigo.</li>
+<li>Amo cómo tu amor es un regalo que agradezco cada día.</li>
+<li>Me llena cómo tus palabras me elevan el ánimo.</li>
+<li>Me inspira cómo siempre crees en nuestro amor.</li>
+<li>Me encanta cómo haces que mi corazón lata más fuerte.</li>
+<li>Me enamora cómo me haces sentir que soy especial.</li>
+<li>Amo cómo me haces sentir que el mundo es mejor contigo.</li>
+<li>Me fascina cómo compartimos risas sin esfuerzo.</li>
+<li>Me encanta cómo me haces que un pedito suene tierno.</li>
+<li>Me enamora cómo tu amor es un faro en mi vida.</li>
+<li>Amo cómo haces que cada momento sea mágico.</li>
+<li>Me llena cómo me haces sentir inseparable de ti.</li>
+<li>Me inspira cómo me haces creer en la felicidad.</li>
+<li>Me encanta cómo me haces sentir completo.</li>
+<li>Me enamora cómo tu cariño nunca falla.</li>
+<li>Amo cómo haces que todo en mi vida tenga sentido.</li>
+<li>Amo cómo tu voz es mi melodía favorita.</li>
+<li>Me encanta cómo haces que los días difíciles sean más llevaderos.</li>
+<li>Me fascina cómo tu amor es un refugio seguro.</li>
+<li>Me enamora cómo tu sonrisa ilumina hasta la noche más oscura.</li>
+<li>Amo cómo compartimos secretos que nadie más sabe.</li>
+<li>Me llena cómo tu presencia me da paz y alegría.</li>
+<li>Me inspira cómo haces que todo parezca posible.</li>
+<li>Me encanta cómo me haces sentir que soy único para ti.</li>
+<li>Me enamora cómo tus palabras me levantan cuando caigo.</li>
+<li>Amo cómo me haces soñar con un futuro juntos.</li>
+<li>Me fascina cómo me haces reír sin razón aparente.</li>
+<li>Me encanta cómo tu amor me hace sentir vivo.</li>
+<li>Me enamora cómo cada momento contigo es un regalo.</li>
+<li>Amo cómo tu abrazo es mi lugar favorito en el mundo.</li>
+<li>Me llena cómo me haces sentir que soy tu prioridad.</li>
+<li>Me inspira cómo siempre buscas lo mejor para nosotros.</li>
+<li>Me encanta cómo haces que mi corazón lata más fuerte.</li>
+<li>Me enamora cómo me haces sentir que somos uno solo.</li>
+<li>Amo cómo compartimos planes y sueños con ilusión.</li>
+<li>Me fascina cómo tu cariño me llena de felicidad.</li>
+<li>Me encanta cómo haces que mi vida sea más completa.</li>
+<li>Me enamora cómo tus detalles hacen que cada día sea especial.</li>
+<li>Amo cómo me haces sentir que nunca estoy solo.</li>
+<li>Me llena cómo me apoyas sin condiciones.</li>
+<li>Me inspira cómo tu amor es constante y verdadero.</li>
+<li>Me encanta cómo me haces sentir que soy amado profundamente.</li>
+<li>Me enamora cómo me haces querer ser mejor persona.</li>
+<li>Amo cómo tus palabras siempre me llegan al corazón.</li>
+<li>Me fascina cómo compartimos risas y momentos felices.</li>
+<li>Me encanta cómo haces que todo sea mejor contigo.</li>
+<li>Me enamora cómo me haces sentir que soy tu mundo.</li>
+<li>Amo cómo tu amor es mi fuerza en los momentos difíciles.</li>
+<li>Me llena cómo me haces sentir que soy especial.</li>
+<li>Me inspira cómo tu amor me da esperanza.</li>
+<li>Me encanta cómo haces que mi corazón se sienta en casa.</li>
+<li>Me enamora cómo me haces querer compartir mi vida contigo.</li>
+<li>Amo cómo tus caricias me llenan de calma.</li>
+<li>Me fascina cómo tu risa es la banda sonora de mis días.</li>
+<li>Me encanta cómo me haces sentir que somos invencibles.</li>
+<li>Me enamora cómo me haces soñar despierto.</li>
+<li>Amo cómo compartimos silencios cómodos y felices.</li>
+<li>Me llena cómo me haces sentir que soy importante para ti.</li>
+<li>Me inspira cómo tu amor me motiva a seguir adelante.</li>
+<li>Me encanta cómo haces que cada día a tu lado sea único.</li>
+<li>Me enamora cómo me haces sentir que soy amado sin condiciones.</li>
+<li>Amo cómo tus abrazos son mi refugio seguro.</li>
+<li>Me fascina cómo me haces reír con solo una mirada.</li>
+<li>Me encanta cómo haces que mis problemas sean más fáciles.</li>
+<li>Me enamora cómo compartimos sueños y esperanzas.</li>
+<li>Amo cómo me haces sentir que puedo contar contigo siempre.</li>
+<li>Me llena cómo me haces sentir que soy la persona más importante para ti.</li>
+<li>Me inspira cómo tu amor me da fuerza.</li>
+<li>Me encanta cómo haces que la vida sea más hermosa.</li>
+<li>Me enamora cómo tu cariño me llena de alegría.</li>
+<li>Amo cómo me haces sentir que soy amado a pesar de mis defectos.</li>
+<li>Me fascina cómo compartimos planes con ilusión.</li>
+<li>Me encanta cómo me haces sentir que nunca estoy solo.</li>
+<li>Me enamora cómo tu amor es constante y fiel.</li>
+<li>Amo cómo me haces querer ser mejor cada día.</li>
+<li>Me llena cómo tu sonrisa es mi energía diaria.</li>
+<li>Me inspira cómo me haces creer en el amor verdadero.</li>
+<li>Me encanta cómo me haces sentir valorado.</li>
+<li>Me enamora cómo me haces reír hasta que me duele el corazón.</li>
+<li>Amo cómo tus palabras me llenan de paz.</li>
+<li>Me fascina cómo me haces sentir que puedo contar contigo.</li>
+<li>Me encanta cómo me haces sentir amado sin condiciones.</li>
+<li>Me enamora cómo tu amor es la luz en mis días oscuros.</li>
+<li>Amo cómo me haces sentir que somos uno solo.</li>
+<li>Me llena cómo me haces querer luchar por nuestro amor.</li>
+<li>Me inspira cómo tu cariño es constante y sincero.</li>
+<li>Me encanta cómo cada día a tu lado es una bendición.</li>
+<li>Me enamora cómo me haces sentir que soy tu mundo.</li>
+<li>Amo cómo haces que cada momento contigo sea único.</li>
+<li>Me fascina cómo me entiendes sin palabras.</li>
+<li>Me encanta cómo tus palabras me hacen sentir vivo.</li>
+<li>Me enamora cómo compartimos silencios felices.</li>
+<li>Amo cómo me haces sentir que no necesito a nadie más.</li>
+<li>Me llena cómo me apoyas sin reservas.</li>
+<li>Me inspira cómo tu amor me hace fuerte.</li>
+<li>Me encanta cómo haces que cada día valga la pena.</li>
+<li>Me enamora cómo me haces sentir que soy tu prioridad.</li>
+<li>Amo cómo tus caricias hablan por sí solas.</li>
+<li>Me fascina cómo tu risa es contagiosa.</li>
+<li>Me encanta cómo me haces sentir que somos perfectos juntos.</li>
+<li>Me enamora cómo me haces querer compartir todo contigo.</li>
+<li>Amo cómo tu amor es un regalo que agradezco.</li>
+<li>Me llena cómo tus palabras me elevan el ánimo.</li>
+<li>Me inspira cómo siempre crees en nuestro amor.</li>
+<li>Me encanta cómo haces que mi corazón lata más fuerte.</li>
+<li>Me enamora cómo me haces sentir especial.</li>
+<li>Amo cómo me haces sentir que el mundo es mejor contigo.</li>
+<li>Me fascina cómo compartimos risas sin esfuerzo.</li>
+<li>Me encanta cómo me haces que un pedito suene tierno.</li>
+<li>Me enamora cómo tu amor es un faro en mi vida.</li>
+<li>Amo cómo haces que cada momento sea mágico.</li>
+<li>Me llena cómo me haces sentir inseparable de ti.</li>
+<li>Me inspira cómo me haces creer en la felicidad.</li>
+<li>Me encanta cómo me haces sentir completo.</li>
+<li>Me enamora cómo tu cariño nunca falla.</li>
+<li>Amo cómo haces que todo en mi vida tenga sentido.</li>
+    </ul>
+  </div>
+
+  <script>
+    function cambiarIconos() {
+      const lista = document.getElementById("lista-razones");
+      lista.classList.toggle("numerado");
+    }
+  </script>
+</body>
+</html>
