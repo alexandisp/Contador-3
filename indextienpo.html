@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Desde que comenzó nuestro amor</title>
+  <style>
+    body {
+      background: #fff0f5;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    h1 {
+      color: #e75480;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .contador {
+      font-size: 2em;
+      color: #ff69b4;
+      background: #ffe4e1;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px #ffb6c1;
+    }
+
+    .corazon {
+      font-size: 3em;
+      color: #ff1493;
+      animation: latido 1s infinite;
+      margin-top: 20px;
+    }
+
+    @keyframes latido {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Desde que empezó nuestro amor 💖</h1>
+  <div class="contador" id="tiempoPasado">
+    Calculando el tiempo...
+  </div>
+  <div class="corazon">❤️</div>
+
+  <script>
+    // Fecha de inicio: 13 de noviembre de 2023 a la 1:00 PM
+    const inicio = new Date('2023-11-13T13:00:00');
+
+    function actualizarContador() {
+      const ahora = new Date();
+      const diferencia = ahora - inicio;
+
+      let segundosTotales = Math.floor(diferencia / 1000);
+      const años = Math.floor(segundosTotales / (365 * 24 * 60 * 60));
+      segundosTotales -= años * 365 * 24 * 60 * 60;
+
+      const meses = Math.floor(segundosTotales / (30 * 24 * 60 * 60));
+      segundosTotales -= meses * 30 * 24 * 60 * 60;
+
+      const dias = Math.floor(segundosTotales / (24 * 60 * 60));
+      segundosTotales -= dias * 24 * 60 * 60;
+
+      const horas = Math.floor(segundosTotales / (60 * 60));
+      segundosTotales -= horas * 60 * 60;
+
+      const minutos = Math.floor(segundosTotales / 60);
+      const segundos = segundosTotales % 60;
+
+      document.getElementById('tiempoPasado').innerHTML = 
+        `${años} años, ${meses} meses, ${dias} días,<br>
+         ${horas} horas, ${minutos} minutos y ${segundos} segundos 💕`;
+    }
+
+    actualizarContador();
+    setInterval(actualizarContador, 1000);
+  </script>
+</body>
+</html>
