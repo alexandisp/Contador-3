@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hoja para Escribir</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: pink;
+    }
+
+    .hoja {
+      background-color: white;
+      width: 90%;
+      height: 90%;
+      margin: auto;
+      margin-top: 5%;
+      padding: 40px;
+      font-size: 34px;
+      line-height: 1.6;
+      font-family: sans-serif;
+      box-sizing: border-box;
+      outline: none;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="hoja" contenteditable="true">
+    hola mi vidita, estoy escribiendo esto el 19 de este mes, a lo mejor ya lo sabras pero feliz dia mi vida, se que no estamos pero quiero algo de tiempo para hacerte la sorpresa mas bonita que pueda realizar, quiero hacerte algo bonito para que regreses conmigo pero necesito muchas cosas que ahora no tengo pero te prometo que tendre, no te hare esperar mucho te lo prometo, no quiero que vuelva a pasar algo mal, no soy clarividente para saber si nos ira bien desde ahora pero aunque no sea asi te juro que lo seguiré intentado una y otra vez, eres la persona mas importante que tengo y la persona que mas tiempo pasa aunque sea atreves de una pantalla, eres el amor de mi vida y cada vez que estes mal o quieras desahogarte o contar algo puedes pensar en mi como tu primera opción. Estar para ti siempre es mi deber y algo que quiero para toda mi vida, quiero ser la persona que te vea ingresando a la universidad y aunque a veces no tengas fe en ti misma y digas que no podras ingresar o te rechacen una beca, siempre podras contar con mi apoyo, no prometo hacerte sentir mejor pero si prometo que estaré para ti para escucharte y que logres desahogarte. Eres mi sol mi vida y no se que haría sin ti, quiero hacerte muy feliz y espero que tengamos una familia, aunque ya te considero, a ti y naty como mi segunda familia gsdgsd y un poquito a charki NGDS, mua, no quisiera perder eso, te amo con todo mi corazon mi amor y feliz dia mi vida <3
+  </div>
+</body>
+</html>
